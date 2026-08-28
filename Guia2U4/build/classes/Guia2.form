@@ -45,7 +45,11 @@
                           <Component id="jcbxPuesto" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jbtnInsertar" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jbtnInsertar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="JbtEliminar" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -93,7 +97,10 @@
                           <Component id="jcbxPuesto" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jbtnInsertar" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jbtnInsertar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="JbtEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
@@ -200,8 +207,19 @@
               </Table>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtabDatosMousePressed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="JbtEliminar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JbtEliminarActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
